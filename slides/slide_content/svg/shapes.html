@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVG</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/Tangle-0.1.0/TangleKit/TangleKit.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/slide_content.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div>
+      <svg>
+        <circle cx="200" cy="200" r="100"></circle>
+        <rect x="500" y="100" width="200" height="200"></rect>
+      </svg>
+      <div>
+        <tt>&lt;svg&gt;</tt>
+
+        <div class="edit-circle">
+          <tt style="margin-left: 1em">
+            &lt;circle
+            cx="<span class="TKAdjustableNumber" data-var="cx" data-min="0" data-max="800" data-step="1"></span>"
+            cy="<span class="TKAdjustableNumber" data-var="cy" data-min="0" data-max="800" data-step="1"></span>"
+            r="<span class="TKAdjustableNumber" data-var="r"  data-min="0" data-max="500" data-step="1"></span>"
+            &gt;&lt;/circle&gt;
+          </tt>
+        </div>
+
+        <div class="edit-rect">
+          <tt style="margin-left: 1em">
+            &lt;rect
+            x="<span class="TKAdjustableNumber" data-var="x"  data-min="0" data-max="1000" data-step="1"></span>"
+            y="<span class="TKAdjustableNumber" data-var="y"  data-min="0" data-max="1000" data-step="1"></span>"
+            width="<span class="TKAdjustableNumber" data-var="width"  data-min="0" data-max="1000" data-step="1"></span>"
+            height="<span class="TKAdjustableNumber" data-var="height" data-min="0" data-max="1000" data-step="1"></span>"
+            &gt;&lt;/rect&gt;
+          </tt>
+        </div>
+
+        <tt>&lt;/svg&gt;</tt>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/Tangle-0.1.0/Tangle.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/mootools.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/sprintf.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/TangleKit.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/shapes.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

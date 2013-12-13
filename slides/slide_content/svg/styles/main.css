@@ -1,0 +1,9 @@
+@import url('svg.css');
+
+.TKAdjustableNumberDown {
+  color: #7CF!important;
+  border-bottom: 1px dashed #7CF!important;
+}
+.TKAdjustableNumberHelp {
+  display: none!important;
+}
