@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../../../bower_components/d3/d3.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../../../css/slide_content.css">
+  </head>
+  <body>
+    <style type="text/css">
+      #main {
+        box-sizing: border-box;
+      }
+
+      svg {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        background: white;
+      }
+
+      .example {
+        margin: 10px;
+        float: left;
+      }
+
+      p {
+        margin: 0;
+        text-align: center;
+      }
+    </style>
+
+    <section id="main">
+      <div class="example">
+        <svg class="color"></svg>
+        <p>Color</p>
+      </div>
+
+      <div class="example">
+        <svg class="size"></svg>
+        <p>Size</p>
+      </div>
+
+      <div class="example">
+        <svg class="shape"></svg>
+        <p>Shape</p>
+      </div>
+
+      <div class="example">
+        <svg class="tilt"></svg>
+        <p>Tilt</p>
+      </div>
+    </section>
+
+    <script src="plot.js"></script>
+  </body>
+</html>

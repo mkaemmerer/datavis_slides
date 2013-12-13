@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Libraries -->
+    <script src="../../../bower_components/d3/d3.js" charset="utf-8"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="plot.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var scatter = Chart.scatter();
+      var data = [
+        [
+          { "x": 10, "y": 8.04  },
+          { "x": 8,  "y": 6.95  },
+          { "x": 13, "y": 7.58  },
+          { "x": 9,  "y": 8.81  },
+          { "x": 11, "y": 8.33  },
+          { "x": 14, "y": 9.96  },
+          { "x": 6,  "y": 7.24  },
+          { "x": 4,  "y": 4.26  },
+          { "x": 12, "y": 10.84 },
+          { "x": 7,  "y": 4.82  },
+          { "x": 5,  "y": 5.68  }
+        ],
+        [
+          { "x": 10, "y": 9.14 },
+          { "x": 8,  "y": 8.14 },
+          { "x": 13, "y": 8.74 },
+          { "x": 9,  "y": 8.77 },
+          { "x": 11, "y": 9.26 },
+          { "x": 14, "y": 8.1  },
+          { "x": 6,  "y": 6.13 },
+          { "x": 4,  "y": 3.1  },
+          { "x": 12, "y": 9.13 },
+          { "x": 7,  "y": 7.26 },
+          { "x": 5,  "y": 4.74 }
+        ],
+        [
+          { "x": 10, "y": 7.46 },
+          { "x": 8,  "y": 6.77 },
+          { "x": 13, "y": 12.74 },
+          { "x": 9,  "y": 7.11 },
+          { "x": 11, "y": 7.81 },
+          { "x": 14, "y": 8.84 },
+          { "x": 6,  "y": 6.08 },
+          { "x": 4,  "y": 5.39 },
+          { "x": 12, "y": 8.15 },
+          { "x": 7,  "y": 6.42 },
+          { "x": 5,  "y": 5.73 }
+        ],
+        [
+          { "x": 8,  "y": 6.58 },
+          { "x": 8,  "y": 5.76 },
+          { "x": 8,  "y": 7.71 },
+          { "x": 8,  "y": 8.84 },
+          { "x": 8,  "y": 8.47 },
+          { "x": 8,  "y": 7.04 },
+          { "x": 8,  "y": 5.25 },
+          { "x": 19, "y": 12.5 },
+          { "x": 8,  "y": 5.56 },
+          { "x": 8,  "y": 7.91 },
+          { "x": 8,  "y": 6.89 }
+        ]
+      ];
+
+      // Update settings:
+      scatter.xDomain( [3.5, 19] )
+        .yDomain( [2, 12.5] )
+        .yTicks( 5 );
+
+      data.forEach(function(set, i){
+        var figure, width;
+        // Append a new figure to the DOM:
+        figure = d3.select( 'body' )
+          .append( 'figure' );
+
+        // Get the figure width:
+        width = parseInt( figure.style( 'width' ), 10 );
+        // Update the chart generator settings:
+        scatter
+          .width( width )
+          .height( 250 )
+
+        // Append the data and generate a new chart:
+        figure.datum( set )
+          .attr('class', 'chart')
+          .call( scatter );
+        // Compute the linear fit:
+        scatter.linearFit();
+      })
+    </script>
+  </body>
+</html>

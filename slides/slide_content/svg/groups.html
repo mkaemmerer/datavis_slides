@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVG</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/Tangle-0.1.0/TangleKit/TangleKit.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/slide_content.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <div>
+      <svg>
+        <g transform="translate(200,200)rotate(0)">
+          <rect x="-160" y="-160"  width="150" height="150"></rect>
+          <rect x="-160" y="10"    width="150" height="150"></rect>
+          <rect x="10"   y="-160"  width="150" height="150"></rect>
+          <rect x="10"   y="10"    width="150" height="150"></rect>
+        </g>
+      </svg>
+      <div>
+        <tt>&lt;svg&gt;</tt>
+
+        <div class="edit-group">
+          <tt style="margin-left: 1em">
+            &lt;g
+            transform="
+              translate(
+                <span class="TKAdjustableNumber" data-var="dx" data-min="-960" data-max="960" data-step="1"></span>,
+                <span class="TKAdjustableNumber" data-var="dy" data-min="-500" data-max="500" data-step="1"></span>
+              )
+              rotate(
+                <span class="TKAdjustableNumber" data-var="r" data-min="-360" data-max="360" data-step="1"></span>
+              )
+              scale(
+                <span class="TKAdjustableNumber" data-var="s" data-min="0.1" data-max="10" data-step="0.1"></span>
+              )"
+            &gt;
+
+            <div><tt style="margin-left: 2em">&lt;rect &hellip; &gt;&lt;/rect&gt;</tt></div>
+            <div><tt style="margin-left: 2em">&lt;rect &hellip; &gt;&lt;/rect&gt;</tt></div>
+            <div><tt style="margin-left: 2em">&lt;rect &hellip; &gt;&lt;/rect&gt;</tt></div>
+            <div><tt style="margin-left: 2em">&lt;rect &hellip; &gt;&lt;/rect&gt;</tt></div>
+
+          </tt>
+          <tt style="margin-left: 1em">
+            &lt;/g&gt;
+          </tt>
+        </div>
+
+        <tt>&lt;/svg&gt;</tt>
+      </div>
+    </div>
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/Tangle-0.1.0/Tangle.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/mootools.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/sprintf.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/BVTouchable.js"></script>
+    <script src="bower_components/Tangle-0.1.0/TangleKit/TangleKit.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/groups.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

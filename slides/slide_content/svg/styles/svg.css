@@ -1,0 +1,25 @@
+svg {
+  display: block;
+  width: 800px;
+  height: 400px;
+  border: 1px solid #aaa;
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+circle, rect {
+  fill: steelblue;
+}
+line {
+  stroke: #333;
+  shape-rendering: crispEdges;
+}
+text {
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+g line {
+  shape-rendering: initial;
+}
